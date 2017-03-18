@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="MS_TableConnectionString-Web.config Connection String" description="MS_TableConnectionString Connection String used in web.config by the application to access the database." defaultValue="Data Source=tcp:connectivesport.database.windows.net,1433;Initial Catalog=connectivesport_db;User ID=nhtadmins@connectivesport;Password=NhietHuyetTreIC17" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="E:\\Projects\\connectivesport_Runtime\\connectivesportService\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='MS_TableConnectionString']/@connectionString" />
+  </parameter>
+  <parameter name="MS_TableConnectionString_DatabasePublish-Web.config Connection String" description="MS_TableConnectionString_DatabasePublish Connection String used in web.config by the application to access the database." defaultValue="MS_TableConnectionString_DatabasePublish.ConnetionString" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="E:\\Projects\\connectivesport_Runtime\\connectivesportService\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='MS_TableConnectionString_DatabasePublish']/@connectionString" />
+  </parameter>
+</parameters>
