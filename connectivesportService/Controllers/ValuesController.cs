@@ -3,6 +3,9 @@ using System.Web.Http.Tracing;
 using Microsoft.Azure.Mobile.Server;
 using Microsoft.Azure.Mobile.Server.Config;
 
+using connectivesportService.Models;
+using System.Collections.Generic;
+
 namespace connectivesportService.Controllers
 {
     // Use the MobileAppController attribute for each ApiController you want to use  
@@ -28,5 +31,6 @@ namespace connectivesportService.Controllers
         {
             return "Hello World!";
         }
+
     }
 }

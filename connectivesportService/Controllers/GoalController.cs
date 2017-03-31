@@ -27,6 +27,7 @@ namespace connectivesportService.Controllers
         // GET tables/Goal/48D68C86-6EA6-4C25-AA33-223FC9A27959
         public SingleResult<Goal> GetGoal(string id)
         {
+            
             return Lookup(id);
         }
 

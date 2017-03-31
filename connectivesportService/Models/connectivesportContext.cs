@@ -5,6 +5,7 @@ using Microsoft.Azure.Mobile.Server;
 using Microsoft.Azure.Mobile.Server.Tables;
 using connectivesportService.DataObjects;
 
+
 namespace connectivesportService.Models
 {
     public class connectivesportContext : DbContext

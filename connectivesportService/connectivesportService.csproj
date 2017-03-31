@@ -232,6 +232,10 @@
     <Compile Include="Migrations\201703131426260_FixSportType.Designer.cs">
       <DependentUpon>201703131426260_FixSportType.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201703310519377_acurrent.cs" />
+    <Compile Include="Migrations\201703310519377_acurrent.Designer.cs">
+      <DependentUpon>201703310519377_acurrent.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\connectivesportContext.cs" />
     <Compile Include="SharedExtensions.cs" />
@@ -277,6 +281,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201703131426260_FixSportType.resx">
       <DependentUpon>201703131426260_FixSportType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703310519377_acurrent.resx">
+      <DependentUpon>201703310519377_acurrent.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
