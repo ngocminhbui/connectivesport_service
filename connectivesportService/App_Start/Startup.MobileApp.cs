@@ -50,6 +50,7 @@ namespace connectivesportService
                     TokenHandler = config.GetAppServiceTokenHandler()
                 });
             }
+            //config.Formatters.JsonFormatter.SupportedMediaTypes.Add(new System.Net.Http.Headers.MediaTypeHeaderValue("text/html"));
             app.UseWebApi(config);
         }
     }

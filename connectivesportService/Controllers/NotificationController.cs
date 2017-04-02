@@ -8,6 +8,7 @@ using Newtonsoft.Json;
 using System;
 using Microsoft.Azure.Mobile.Server;
 using System.Net;
+using System.Data.SqlClient;
 
 namespace connectivesportService.Controllers
 {
@@ -126,10 +127,18 @@ namespace connectivesportService.Controllers
             return newRegistrationId;
         }
 
-
-
-
-
+        [HttpGet]
+        [Route("api/data/getNearbyUser")]
+        public string GetNearbyUser(double lat, double lon)
+        {
+            connectivesportContext _context = new connectivesportContext();
+            string querry = "select * from users where abs(users.lastlocationX - @lat) < 0.005 and abs(users.lastlocationY - @lon) < 0.005";
+            var querryresult = _context.Users.SqlQuery(querry, new SqlParameter("@lat",lat), new SqlParameter("@lon", lon)).ToListAsync();
+            
+            string result = "";
+            result = JsonConvert.SerializeObject(querryresult);
+            return result;
+        }
 
 
         #region Notification
